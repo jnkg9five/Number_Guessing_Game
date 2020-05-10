@@ -2,12 +2,13 @@
 #You input a number to guess if it matches a randomly selected number between 1 and 20.
 #You will have 6 chances to numG the number.
 import random
+import os
 
 print('Hello. What is your name?')
 name = input()
 numToGuess = random.randint(1,20)
 totalChances = 7
-print(name+', guess a number between 1 and 20.')
+print(name+', guess a number between 1 and 20: ')
 
 for numOfGuesses in range(1,totalChances):
     numG = int(input())
@@ -26,3 +27,5 @@ if numG == numToGuess:
     print('You took '+str(numOfGuesses)+' guesses to find the number.')
 else:
     print('Sorry! You took too many guesses. The number to guess was '+str(numToGuess)+'.')
+
+os.system("pause")
