@@ -17,6 +17,6 @@ The program algorithm executes in the following order.
 
 ## To Do with This Project
 
-There are several things I want to enhance with this progect. 
+There are several things I want to enhance with this project. 
 
 1. Create a graphical user interface (GUI) to let the user interact with the program. 
