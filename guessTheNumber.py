@@ -6,13 +6,13 @@ import os
 
 print('Hello. What is your name?')
 name = input()
-numToGuess = random.randint(1,20)
-totalChances = 7
-print(name+', guess a number between 1 and 20: ')
+numToGuess = random.randint(1,30)
+totalChances = 10
+print(name+', guess a number between 1 and 30: ')
 
 for numOfGuesses in range(1,totalChances):
     numG = int(input())
-    while(numG > 20 and numG > 0):
+    while(numG > 30 and numG > 0):
         print("Sorry, the value you entered is not between 1 and 20. Enter a valid number.")
         numG = int(input())
     if numG < numToGuess:
